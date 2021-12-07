@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB_USERNAME = credentials('Docker-Username')
         DOCKER_HUB_PASSWORD = credentials('Docker-Jenkins')
-        CURRENT_COMMIT = getCommitHash()
+        CURRENT_COMMIT = "Latest"
     }
 
     stages {
